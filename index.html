@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | R.S Designs</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/R.S Logo Transparent.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+</head>
+<body>
+
+    <header class="hero">
+      <!-- NAVIGATION MENU FOR DESKTOP-->
+      <div class="nav-menu">
+        <div class="logo">
+          <img src="assets/R.S Logo Transparent.png" alt="">
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li class="dropdown-box">
+            <a class="dropdown-menu" onclick="toggleDropDown()">Menu</a>
+            <i class="ri-arrow-drop-down-fill"></i>
+            <div class="dropdown-menu-content" id="myDropdown">
+              <a href="about.html">About</a>
+              <a href="pricing.html">Pricing</a>
+              <a href="faqs.html">FAQs</a>
+              <a href="terms&conditions.html">Terms & Conditions</a>
+              <a href="privacy&policy.html">Privacy Policy</a>
+              <a href="blogs.html">Blogs</a>
+              <a href="blogs-details.html">Blog Detail Page</a>
+            </div>
+          </li>
+          <li><a href="news.html">News</a></li>
+        </ul>
+        <div class="button">
+          <button class="quote-btn">Get Quotes</button>
+        </div>
+        <div class="mobile-menu">
+          <i class="ri-menu-3-line" onclick="showSidebar()"></i>
+        </div>
+      </div>
+
+      <!-- NAVIGATION MENU MOBILE/TABLET-->
+      <div class="sidebar">
+        <div class="open-icon" onclick="hideSidebar()">
+          <i class="ri-close-large-line"></i>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li class="dropdown-box">
+            <a class="dropdown-menu" onclick="toggleDropDown()">Menu</a>
+            <i class="ri-arrow-drop-down-fill"></i>
+            <div class="dropdown-menu-content" id="myDropdown">
+              <a href="about.html">About</a>
+              <a href="pricing.html">Pricing</a>
+              <a href="faqs.html">FAQs</a>
+              <a href="terms&conditions.html">Terms & Conditions</a>
+              <a href="privacy&policy.html">Privacy Policy</a>
+              <a href="blogs.html">Blogs</a>
+              <a href="blogs-details.html">Blog Detail Page</a>
+            </div>
+          </li>
+          <li><a href="news.html">News</a></li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <h2>Designing and Great Services <span>IT Solutions.</span></h2>
+        <p>Explore the wonders in bulding a complete website.
+          It is also highly customizable SEO friendly template.</p>
+        <div class="social-icons">
+          <i class="ri-twitter-fill"></i>
+          <i class="ri-facebook-circle-fill"></i>
+          <i class="ri-instagram-line"></i>
+          <i class="ri-linkedin-box-fill"></i>
+        </div>
+      </div>
+    </header>
+
+    
+    <main>
+      <div class="services">
+        <div class="services-card">
+          <img src="assets/service-design.svg">
+          <h1>Application Design</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aliquid doloremque reiciendis quisquam earum repudiandae corporis amet a.</p>
+        </div>
+
+        <div class="services-card">
+          <img src="assets/service-hosting.svg">
+          <h1>Web Hosting</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aliquid doloremque reiciendis quisquam earum repudiandae corporis amet a.</p>
+        </div>
+        
+        <div class="services-card">
+          <img src="assets/service-social.svg">
+          <h1>Social Media</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aliquid doloremque reiciendis quisquam earum repudiandae corporis amet a.</p>
+        </div>
+      
+        <div class="services-card">
+          <img src="assets/service-seo.svg">
+          <h1>SEO Optimization</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aliquid doloremque reiciendis quisquam earum repudiandae corporis amet a.</p>
+        </div>
+      
+        <div class="services-card">
+          <img src="assets/service-cloud.svg">
+          <h1>Cloud Server</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aliquid doloremque reiciendis quisquam earum repudiandae corporis amet a.</p>
+        </div>
+      
+        <div class="services-card">
+          <img src="assets/service-secure.svg">
+          <h1>Data Security</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aliquid doloremque reiciendis quisquam earum repudiandae corporis amet a.</p>
+        </div>
+      </div>
+
+      <div class="about">
+        <div class="top">
+          <h1>Why Choose Us</h1>
+          <p>lorem ipsum dolor sit amet</p>
+        </div>
+
+        <div class="about-content">
+          <div class="about-container">
+            <div class="about-left">
+              <div class="about-left-info-grid">
+                <div class="about-info">
+                  <h1>Experience</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima aspernatur id accusantium magnam fugit quidem dict</p>
+                </div>
+                <div class="about-image">
+                  <img src="assets/icon-1.svg" alt="">
+                </div>
+              </div>
+  
+              <div class="about-left-info-grid">
+                <div class="about-info">
+                  <h1>Products</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima aspernatur id accusantium magnam fugit quidem dict</p>
+                </div>
+                <div class="about-image">
+                  <img src="assets/icon-2.svg" alt="">
+                </div>
+              </div>
+  
+              <div class="about-left-info-grid">
+                <div class="about-info">
+                  <h1>Approach</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima aspernatur id accusantium magnam fugit quidem dict</p>
+                </div>
+                <div class="about-image">
+                  <img src="assets/icon-3.svg" alt="">
+                </div>
+              </div>
+            </div>
+    
+            <div class="about-middle">
+              <img src="assets/features.jpg" alt="">
+            </div>
+    
+            <div class="about-right">
+              <div class="about-right-info-grid">
+                <div class="about-image">
+                  <img src="assets/icon-4.svg" alt="">
+                </div>
+                <div class="about-info">
+                  <h1>Pricing</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima aspernatur id accusantium magnam fugit quidem dict</p>
+                </div>
+              </div>
+  
+              <div class="about-right-info-grid">
+                <div class="about-image">
+                  <img src="assets/icon-5.svg" alt="">
+                </div>
+                <div class="about-info">
+                  <h1>Delivery</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima aspernatur id accusantium magnam fugit quidem dict</p>
+                </div>
+              </div>
+  
+              <div class="about-right-info-grid">
+                <div class="about-image">
+                  <img src="assets/icon-6.svg" alt="">
+                </div>
+                <div class="about-info">
+                  <h1>Support</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima aspernatur id accusantium magnam fugit quidem dict</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio">
+        <div class="top">
+          <h1>Portfolio</h1>
+          <p>lorem ipsum dolor sit amet</p>
+        </div>
+
+        
+        <div class="filter">
+          <div class="tab-link active">All</div>
+          <div class="tab-link">App Design</div>
+          <div class="tab-link">App Development</div>
+          <div class="tab-link">Branding</div>
+          <div class="tab-link">It Solutions</div>
+        </div>
+
+        <div class="portfolio-grid">
+          <a href="assets/portfolio-1.jpg" target="_blank"><img src="assets/portfolio-1.jpg" alt=""></a>   
+          <a href="assets/portfolio-1.jpg" target="_blank"><img src="assets/portfolio-2.jpg" alt=""></a>   
+          <a href="assets/portfolio-1.jpg" target="_blank"><img src="assets/portfolio-3.jpg" alt=""></a>   
+          <a href="assets/portfolio-1.jpg" target="_blank"><img src="assets/portfolio-4.jpg" alt=""></a>   
+          <a href="assets/portfolio-1.jpg" target="_blank"><img src="assets/portfolio-5.jpg" alt=""></a>   
+          <a href="assets/portfolio-1.jpg" target="_blank"><img src="assets/portfolio-6.jpg" alt=""></a>   
+        </div>
+      </div>
+
+      <div class="pricing">
+        <div class="top">
+          <h1>Pricing Plans</h1>
+          <p>lorem ipsum dolor sit amet</p>
+        </div>
+
+        <div class="columns">
+          <div class="column">
+            <h2>Basic</h2>
+            <p><span>$</span>25</p>
+            <div><i class="ri-checkbox-circle-line"></i>Unlimited GB Space</div>
+            <div><i class="ri-checkbox-circle-line"></i>30 Domain Names</div>
+            <div><i class="ri-checkbox-circle-line"></i>Free SSL</div>
+            <div><i class="ri-checkbox-circle-line"></i>Daily Backup</div>
+            <div><i class="ri-checkbox-circle-line"></i>Free Templates</div>
+            <div><i class="ri-checkbox-circle-line"></i>Free Email</div>
+            <div><i class="ri-checkbox-circle-line"></i>10 Databases</div>
+            <div><i class="ri-checkbox-circle-line"></i>Unlimited Email Address</div>
+            <div><i class="ri-checkbox-circle-line"></i>Live Support</div>
+            <div class="button">
+              <button>Order Now</button>
+            </div>
+          </div> 
+
+          <div class="column">
+            <h2>Standard</h2>
+            <p><span>$</span>50</p>
+            <div><i class="ri-checkbox-circle-line"></i>Unlimited GB Space</div>
+            <div><i class="ri-checkbox-circle-line"></i>30 Domain Names</div>
+            <div><i class="ri-checkbox-circle-line"></i>Free SSL</div>
+            <div><i class="ri-checkbox-circle-line"></i>Daily Backup</div>
+            <div><i class="ri-checkbox-circle-line"></i>Free Templates</div>
+            <div><i class="ri-checkbox-circle-line"></i>Free Email</div>
+            <div><i class="ri-checkbox-circle-line"></i>10 Databases</div>
+            <div><i class="ri-checkbox-circle-line"></i>Unlimited Email Address</div>
+            <div><i class="ri-checkbox-circle-line"></i>Live Support</div>
+            <div class="button">
+              <button>Order Now</button>
+            </div>
+          </div>  
+
+          <div class="column">
+            <h2>Premium</h2>
+            <p><span>$</span>100</p>
+            <div><i class="ri-checkbox-circle-line"></i>Unlimited GB Space</div>
+            <div><i class="ri-checkbox-circle-line"></i>30 Domain Names</div>
+            <div><i class="ri-checkbox-circle-line"></i>Free SSL</div>
+            <div><i class="ri-checkbox-circle-line"></i>Daily Backup</div>
+            <div><i class="ri-checkbox-circle-line"></i>Free Templates</div>
+            <div><i class="ri-checkbox-circle-line"></i>Free Email</div>
+            <div><i class="ri-checkbox-circle-line"></i>10 Databases</div>
+            <div><i class="ri-checkbox-circle-line"></i>Unlimited Email Address</div>
+            <div><i class="ri-checkbox-circle-line"></i>Live Support</div>
+            <div class="button">
+              <button>Order Now</button>
+            </div>
+            
+          </div>       
+        </div>
+      </div>
+
+      <div class="testimonials">
+        <div class="top">
+          <h1>Testimonials</h1>
+          <p>lorem ipsum dolor sit amet</p>
+        </div>
+
+        <div class="testimonial-cards">
+          <div class="testimonial-card">
+            <div class="card-info">
+              <img src="assets/testimonial-1.jpg" alt="testimonial-1 image">
+              <div class="card-info-row">
+                <p class="name">Jhone Doe</p>
+                <p class="title">CFO</p>
+                <div class="icons">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-message">
+              <i class="ri-double-quotes-l"></i>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                A ipsam obcaecati aperiam quod fuga, eum earum totam, sapiente iusto debitis,
+                 itaque consequuntur aspernatur. 
+                Eos veritatis, explicabo perspiciatis quis cupiditate obcaecati!</p>
+              <i class="ri-double-quotes-r"></i>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="card-info">
+              <img src="assets/testimonial-2.jpg" alt="testimonial-1 image">
+              <div class="card-info-row">
+                <p class="name">Afa Rose</p>
+                <p class="title">Web Designer</p>
+                <div class="icons">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-message">
+              <i class="ri-double-quotes-l"></i>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                A ipsam obcaecati aperiam quod fuga, eum earum totam, sapiente iusto debitis,
+                 itaque consequuntur aspernatur. 
+                Eos veritatis, explicabo perspiciatis quis cupiditate obcaecati!</p>
+              <i class="ri-double-quotes-r"></i>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="card-info">
+              <img src="assets/testimonial-3.jpg" alt="testimonial-1 image">
+              <div class="card-info-row">
+                <p class="name">Keena Lara</p>
+                <p class="title">Store Owner</p>
+                <div class="icons">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-message">
+              <i class="ri-double-quotes-l"></i>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                A ipsam obcaecati aperiam quod fuga, eum earum totam, sapiente iusto debitis,
+                 itaque consequuntur aspernatur. 
+                Eos veritatis, explicabo perspiciatis quis cupiditate obcaecati!</p>
+              <i class="ri-double-quotes-r"></i>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="card-info">
+              <img src="assets/testimonial-4.jpg" alt="testimonial-1 image">
+              <div class="card-info-row">
+                <p class="name">Fizzi Brandon</p>
+                <p class="title">Freelancer</p>
+                <div class="icons">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-message">
+              <i class="ri-double-quotes-l"></i>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                A ipsam obcaecati aperiam quod fuga, eum earum totam, sapiente iusto debitis,
+                 itaque consequuntur aspernatur. 
+                Eos veritatis, explicabo perspiciatis quis cupiditate obcaecati!</p>
+              <i class="ri-double-quotes-r"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner">
+        <div class="banner-info">
+          <img src="assets/happy-clients.svg" alt="">
+          <div class="number">232</div>
+          <h1>Happy Clients</h1>
+          <p>consequuntur quae diredo</p>
+        </div>
+
+        <div class="banner-info">
+          <img src="assets/complete-projects.svg" alt="">
+          <div class="number">521</div>
+          <h1>Completed Projects</h1>
+          <p>adipisci atque quia aut</p>
+        </div>
+
+        <div class="banner-info">
+          <img src="assets/hours-support.svg" alt="">
+          <div class="number">453</div>
+          <h1>Hours Of Support</h1>
+          <p>aut commodi quaerat</p>
+        </div>
+      </div>
+
+      <div class="slider">
+        <div class="slides">
+          <img class="slide" src="assets/client-1.png" alt="companies">
+          <img class="slide" src="assets/client-2.png" alt="companies">
+          <img class="slide" src="assets/client-3.png" alt="companies">
+          <img class="slide" src="assets/client-4.png" alt="companies">
+          <img class="slide" src="assets/client-5.png" alt="companies">
+          <img class="slide" src="assets/client-6.png" alt="companies">
+          <img class="slide" src="assets/client-7.png" alt="companies">
+          <img class="slide" src="assets/client-8.png" alt="companies">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094</button>
+        <button class="next" onclick="nextSlide()">&#10095</button>
+      </div>
+
+      <div class="team-section">
+        <div class="top">
+          <h1>Team</h1>
+          <p>lorem ipsum dolor sit amet</p>
+        </div>
+
+        <div class="team-cards">
+          <div class="team-card">
+            <img src="assets/team-1.jpg" alt="team-member Jhone Bi">
+            <h2 class="name">Jhone Bi</h2>
+            <p class="title">Application Manager</p>
+            <div class="socials">
+              <i class="ri-twitter-fill"></i>
+              <i class="ri-facebook-circle-fill"></i>
+              <i class="ri-linkedin-box-fill"></i>
+              <i class="ri-instagram-line"></i>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <img src="assets/team-2.jpg" alt="team-member Jhone Bi">
+            <h2 class="name">Sani Awesome</h2>
+            <p class="title">Social Media</p>
+            <div class="socials">
+              <i class="ri-twitter-fill"></i>
+              <i class="ri-facebook-circle-fill"></i>
+              <i class="ri-linkedin-box-fill"></i>
+              <i class="ri-instagram-line"></i>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <img src="assets/team-3.jpg" alt="team-member Jhone Bi">
+            <h2 class="name">Andrio Willi</h2>
+            <p class="title">Content Writer</p>
+            <div class="socials">
+              <i class="ri-twitter-fill"></i>
+              <i class="ri-facebook-circle-fill"></i>
+              <i class="ri-linkedin-box-fill"></i>
+              <i class="ri-instagram-line"></i>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <img src="assets/team-4.jpg" alt="team-member Jhone Bi">
+            <h2 class="name">Afa Jonson</h2>
+            <p class="title">Business Manager</p>
+            <div class="socials">
+              <i class="ri-twitter-fill"></i>
+              <i class="ri-facebook-circle-fill"></i>
+              <i class="ri-linkedin-box-fill"></i>
+              <i class="ri-instagram-line"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faqs-section">
+        <div class="top">
+          <h1>FAQ's</h1>
+          <p>lorem ipsum dolor sit amet</p>
+        </div>
+
+        <div class="faqs-dropdown">
+          <div class="dropdown-container">
+              <div class="dropdown-content-container">
+                  <i class="ri-arrow-right-line"></i>
+                  <p>What is web domain and hosting?</p>
+                  <div class="dropdown-arrow">
+                    <i class="ri-arrow-down-wide-line"></i>
+                  </div>
+              </div>
+              <div class="dropdown-content">
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+                     sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                     Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+                     adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam 
+                     quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit 
+                     laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui 
+                     in ea voluptate velit esse quam nihil molestiae consequatur, 
+                     vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+              </div>
+          </div>
+
+          <div class="dropdown-container">
+            <div class="dropdown-content-container">
+                <i class="ri-arrow-right-line"></i>
+                <p>Which server is best for websites linux or windows?</p>
+                <div class="dropdown-arrow">
+                  <i class="ri-arrow-down-wide-line"></i>
+                </div>
+            </div>
+            <div class="dropdown-content">
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+                   sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                   Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+                   adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam 
+                   quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit 
+                   laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui 
+                   in ea voluptate velit esse quam nihil molestiae consequatur, 
+                   vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+          </div>
+
+          <div class="dropdown-container">
+            <div class="dropdown-content-container">
+                <i class="ri-arrow-right-line"></i>
+                <p>Google cloud or Amazon server which one is best and fast?</p>
+                <div class="dropdown-arrow">
+                  <i class="ri-arrow-down-wide-line"></i>
+                </div>
+            </div>
+            <div class="dropdown-content">
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+                    adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam 
+                    quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit 
+                    laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui 
+                    in ea voluptate velit esse quam nihil molestiae consequatur, 
+                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+          </div>
+
+          <div class="dropdown-container">
+            <div class="dropdown-content-container">
+                <i class="ri-arrow-right-line"></i>
+                <p>Why Organic SEO is important for all businesses?</p>
+                <div class="dropdown-arrow">
+                  <i class="ri-arrow-down-wide-line"></i>
+                </div>
+            </div>
+            <div class="dropdown-content">
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+                    adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam 
+                    quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit 
+                    laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui 
+                    in ea voluptate velit esse quam nihil molestiae consequatur, 
+                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="discuss-banner">
+        <div class="discuss-banner-container">
+          <div class="discuss-info">
+            <h1>Let's Discuss your Projects</h1>
+            <p>We pride ourselves with our ability to perform and deliver results. 
+              Use the form below to discuss your project needs with our team, we will get back asap</p>
+            <button>Contact Us</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-section">
+        <div class="top">
+          <h1>Blogs</h1>
+          <p>lorem ipsum dolor sit amet</p>
+        </div>
+
+        <div class="blogs-cards">
+          <div class="blogs-card">
+            <div class="thumbnail">
+              <img src="assets/blog-1.jpg" alt="">
+            </div>
+            <div class="blogs-card-info">
+              <p class="title">Domain & Hosting</p>
+              <p class="heading">How to host website on any hosting provider?</p>
+              <div class="blogs-info">
+                <p>William Bla</p>
+                <p>Feb 1, 2022</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="blogs-card">
+            <div class="thumbnail">
+              <img src="assets/blog-2.jpg" alt="">
+            </div>
+            <div class="blogs-card-info">
+              <p class="title">Advertisement</p>
+              <p class="heading">How to create ad on google adwards?</p>
+              <div class="blogs-info">
+                <p>Jobi Ret</p>
+                <p>Oct 5, 2022</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="blogs-card">
+            <div class="thumbnail">
+              <img src="assets/blog-3.jpg" alt="">
+            </div>
+            <div class="blogs-card-info">
+              <p class="title">Marketing</p>
+              <p class="heading">What is digital marketing and why is it important?</p>
+              <div class="blogs-info">
+                <p>Main Dow</p>
+                <p>Dec 22, 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="contact-section">
+          <div class="top">
+            <h1>Contact Us</h1>
+            <p>lorem ipsum dolor sit amet</p>
+          </div>
+
+            <div class="contact-container">
+              <div class="left-section">
+                <div class="left-contacts">
+                  <h3>Address:</h3>
+                  <p>101 Towns House</p>
+                  <p>Johannesburg, South Africa</p>
+                </div>
+  
+                <div class="middle-contacts">
+                  <h3>Phone:</h3>
+                  <a href="#">+12 123 456 7890</a>
+                  <a href="#">+12 123 456 7890</a>
+                </div>
+  
+                <div class="right-contacts">
+                  <h3>Email:</h3>
+                  <a href="#">email@example.co.za</a>
+                  <a href="#">info@example.com</a>
+                </div>
+              </div>
+  
+              <div class="contact-form">
+                <form action="/submit" method="post">
+                  <div class="contact-form-top">
+                    <input class="name-box" type="text" placeholder="Name*" required>
+                    <input class="email-box" type="email" placeholder="Email*" required>
+                    <input class="subject-box" type="text" placeholder="Subject"><br>
+                  </div>
+                  
+                  <div class="contact-form-bottom">
+                    <textarea class="message-box" id="comments" name="comment" rows="7" cols="49" placeholder="Write Your Message*"></textarea><br>
+                    <input class="submit-btn" type="submit" value="Send Message" required>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+    </main>
+
+      <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+              <a href="#"><img src="assets/logo.png" alt=""></a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+              <h3>Follow us</h3>
+              <div class="icons">
+                <i class="ri-twitter-fill"></i>
+                <i class="ri-facebook-circle-fill"></i>
+                <i class="ri-instagram-line"></i>
+                <i class="ri-linkedin-box-fill"></i>
+              </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">App Development</a></li>
+                    <li><a href="#">Cloud Services</a></li>
+                    <li><a href="#">Domain Adn Hosting</a></li>
+                    <li><a href="#">SEO Optimzation</a></li>
+                    <li><a href="#">Social Media</a></li>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h3>Information</h3>
+                <ul>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Blogs</a></li>
+                  <li><a href="#">Blog Details</a></li>
+                  <li><a href="#">Coming Soon</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-section contact">
+              <h3>Contact Us</h3>
+              <p><i class="ri-map-pin-line"></i> 123 Street, City, Country</p>
+              <p><i class="ri-phone-fill"></i><a href="tel:">+123 456 7890</a></p>
+              <p><i class="ri-mail-line"></i><a href="mailto:">info@example.com</a></p>
+          </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+      <p>&copy; 2024 R.S Design. All rights reserved.</p>
+    </div>
+  <script src="index.js"></script>
+</body>
+</html>
