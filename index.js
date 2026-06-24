@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
   dropdownContainers.forEach(function(container) {
       container.addEventListener("click", function() {
         const content = this.nextElementSibling;
-          const arrow = this.querySelector(".ri-arrow-down-wide-line");
+          const arrow = this.querySelector(".dropdown-arrow");
 
           if (content && arrow) {
               if (content.style.display === "none" || content.style.display === "") {
@@ -50,3 +50,30 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   });
 });
+
+// Contact FORM CODE
+
+const inputs = document.querySelectorAll('.form-input');
+
+inputs.forEach(input => {
+  const group = input.closest('.input-group');
+
+  input.addEventListener('focus', () => {
+    group.classList.add('active');
+  });
+
+  input.addEventListener('blur', () => {
+    if (input.value.trim() === '') {
+      group.classList.remove('active');
+    }
+  });
+
+  // Keep label floated if field already has a value on page load
+  if (input.value.trim() !== '') {
+    group.classList.add('active');
+  }
+});
+
+// YEAR SECTION UPDATES AUTOMATICALLY
+
+document.getElementById("year").textContent = new Date().getFullYear();

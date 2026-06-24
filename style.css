@@ -289,7 +289,7 @@ main {
 }
 
 .services,
-.about,
+.about-container,
 .pricing,
 .blogs-cards {
   display: grid;
@@ -461,7 +461,7 @@ main {
   justify-content: space-around;
   gap: 16px;
   align-items: center;
-  padding: 20px 50px;
+  padding: 20px 40px;
   border: 1px solid rgb(128 128 128 / 35%);
 }
 
@@ -469,9 +469,15 @@ main {
   transform: scale(1.04);
 }
 
-.column div {
+.column .card-options-container {
+  padding: 0;
+  margin: 0;
+}
+
+.column .card-option {
   display: flex;
   align-items: center;
+  color: #777bad;
 }
 
 .column i {
@@ -597,7 +603,7 @@ main {
 
 .banner .banner-info h1 {
   color: #0B6BE0;
-  margin-bottom: 10px;
+  margin: 15px 0 10px 0;
 }
 
 .banner .banner-info p {
@@ -978,16 +984,16 @@ main {
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.20);
 }
 
+.blogs-cards .blogs-card:hover img {
+  width: 100%;
+  transform: scale(1.2);
+}
+
 .thumbnail {
   height: 100%;
   overflow: hidden;
   border-radius: 10px;
   transition: transform 0.3 ease-in-out;
-}
-
-.thumbnail:hover img {
-  width: 100%;
-  transform: scale(1.2);
 }
 
 .thumbnail img {
@@ -1030,22 +1036,30 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 300px;
+  gap: 4.5rem;
   margin-top: 3rem;
 }
 
-.left-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 2rem;
-  height: 350px;
+/* ── Map embed ── */
+.contact-info-map {
+  width: 530px;
+  height: 345px;
+  border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
-.left-section .middle-contacts,
-.left-section .right-contacts {
-  display: flex;
-  flex-direction: column;
+.contact-info-map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.contact-info-container {
+    display: flex;
+    gap: 20px;
+    padding: 15px 20px;
 }
 
 .contact-form {
@@ -1055,57 +1069,81 @@ main {
   padding: 1rem;
 }
 
-.contact-form-heading {
+.contact-form-fields {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 430px;
 }
 
-.contact-form-bottom {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 10px;
+/* Each field is positioned relatively so the label can float */
+.input-group {
+  position: relative;
 }
 
-.name-box,
-.email-box,
-.subject-box {
-  padding: 20px 16px;
-  outline: none;
-  border: 1px solid gray;
+.input-group #subject {
+    resize: none;
+}
+
+.form-input {
   width: 100%;
-  border-radius: 50px;
-  margin-right: 21px;
-  margin-left: -3px;
-  background-color: rgb(241, 241, 241);
-}
-.message-box {
-  padding: 1rem;
-  border: 1px solid grey;
-  border-radius: 10px;
-  resize: none;
-  background-color: rgb(241, 241, 241);
+  padding: 16px 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+  font-family: inherit;
+  resize: vertical; /* applies cleanly to textarea, ignored by inputs */
 }
 
-.contact-form-bottom .submit-btn {
-  background-color: #0B6BE0;
-  padding: 15px 30px;
+.form-input:focus {
+  border-color: #2563eb;
+}
+
+.form-label {
+  position: absolute;
+  left: 12px;
+  top: 16px; /* aligns with padding, works for both input and textarea */
+  background: white;
+  padding: 0 5px;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Float label up when input-group is active */
+.input-group.active .form-label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: #2563eb;
+}
+
+.submit-btn {
+  margin-top: 8px;
+  background-color: #0b6be0;
+  padding: 15px;
   color: #fff;
-  border: none;
+  border: 1px solid transparent;
   font-size: 1rem;
   border-radius: 30px;
   cursor: pointer;
   width: 50%;
+  transition: background-color 0.8s ease, color 0.8s ease, border-color 0.8s ease;
 }
 
-.contact-form-bottom .submit-btn:hover {
+.submit-btn:hover {
   background-color: #fff;
-  color: #0B6BE0;
-  transition: background-color 0.8s ease;
-  border: 1px solid #0B6BE0;
+  color: #0b6be0;
+  border-color: #0b6be0;
 }
 
+.submit-btn i {
+    margin: 0 15px 0 0;
+}
 
 .footer {
   background: linear-gradient(90deg, rgba(174,192,218,1) 15%, rgba(89,135,184,1) 96%);
@@ -1126,6 +1164,13 @@ main {
   flex: 1;
   margin: 1rem 0;
   min-width: 250px;
+}
+
+.footer-content .footer-section .about,
+.footer-content .footer-section .links,
+.footer-content .footer-section .contact {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-section img {
